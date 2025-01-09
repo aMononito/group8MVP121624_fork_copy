@@ -85,10 +85,10 @@
 
         document.addEventListener('keydown', function(event) {
             switch(event.key) {
-                case 'Shift':
+                case 'Wkey':
                     paddle1Y = Math.max(paddle1Y - 20, 0);
                     break;
-                case 'Tab':
+                case 'SKey':
                     paddle1Y = Math.min(paddle1Y + 20, canvas.height - paddleHeight);
                     break;
                 case 'ArrowUp':
