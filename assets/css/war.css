@@ -4,38 +4,99 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: rgb(107, 104, 104);
-}
-
+html,
 body {
   font-family: "Bebas Neue", serif;
+  background-color: rgb(107, 104, 104);
 }
 
 header {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
 }
 
+/**************************/
+/* NAVIGATION */
+/**************************/
+
 nav {
-  padding: 0px 20px;
+  width: 100%;
 }
 
 ul {
   list-style: none;
   display: flex;
-  gap: 10rem;
+  gap: 5rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-  padding: 1.2rem 2.4rem;
-  text-align: center;
-  font-size: 30px;
+  font-size: 50px;
 }
 
-a {
+.main-nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: rgb(243, 99, 99);
+}
+
+/**************************/
+/*  BODY  */
+/**************************/
+
+main {
 }
 
 h1 {
+  display: block;
   text-align: center;
   font-size: 100px;
+  margin: 50px auto;
+}
+
+.game {
+}
+
+#game-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btn {
+  display: block;
+  font-size: 2rem;
+  padding: 1rem 2.5rem;
+  border-radius: 15px;
+
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: rgb(243, 99, 99);
+  border-color: rgb(243, 99, 99);
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: rgb(182, 76, 76);
+  border-color: rgb(182, 76, 76);
 }
