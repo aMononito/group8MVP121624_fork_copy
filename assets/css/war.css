@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(107, 104, 104);
+}
+
+body {
+  font-family: "Bebas Neue", serif;
+}
+
+header {
+  display: flex;
+}
+
+nav {
+  padding: 0px 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 10rem;
+}
+
+li {
+  padding: 1.2rem 2.4rem;
+  text-align: center;
+  font-size: 30px;
+}
+
+a {
+}
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+}
