@@ -1,7 +1,21 @@
+
+:root{
+    --heliotrope: #6d0f41;
+    --box1-color: hsl(19, 68%, 44%);
+    --light-accent: #e1a071;
+    --dark-accent: #570e0e;
+
+    --blue-light:blue;
+    --blue-dark:rgba(5, 5, 90, 0.709);
+    --blue-light1:rgb(182, 182, 255);
+}
 header{
     height: 60px;
-    background-color: #656169e0;
-    color: var(--heliotrope);
+    background: linear-gradient(
+        var(--blue-light1),
+        var(--blue-dark)
+      );
+    color: rgb(92, 2, 2);
     display: flex;
     justify-content: space-between;
 }
@@ -10,9 +24,16 @@ nav li {
     padding: 0px 20px;
     text-decoration: none;
 }
+nav a:hover {
+    box-shadow: -12px -8px 11px 6px var(--heliotrope), 0 0 15px var(--heliotrope);
+}
 
 h1 {
     text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: row;
 }
 .container {
     display: flex;
@@ -29,19 +50,47 @@ h1 {
     gap: 34px;
     justify-items: stretch;
   }
-  .name-box{
+  .name-box {
     width: 200px;
     height: 200px;
-    text-align: center;
     border-radius: 60px;
-  }
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold; 
+    background: linear-gradient(
+        var(--box1-color), 
+        var(--light-accent), 
+        var(--dark-accent)
+      );
+}
   .infoBox {
+    position: relative;
     padding: 20px;
     text-align: center;
     border: 14px solid #390707;
-    background-color: #764b4b;
+    /* background-color: #764b4b; */
     border-radius: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 16px; 
+    font-weight: bold;
+    overflow: hidden;
+    cursor: pointer;
+    background: linear-gradient(
+        var(--blue-light),
+        var(--blue-dark)
+      );
   }
+
+.info-content {
+    display: none; /* Initially hidden */
+    margin-top: 20px; /* Add spacing for the revealed content */
+    color: white;
+}
   
   .name-box {
     background-color: #d1e7ff;
@@ -50,3 +99,22 @@ h1 {
   .info-box {
     background-color: #ffeedb;
   }
+
+  aside {
+    width: 25%;
+    background-color: var(--outer-space);
+    padding: 20px;
+    flex-wrap: wrap;
+    color: var(--heliotrope);
+}
+aside img {
+    width: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    flex: 0 0 300px;
+    transform: rotate(8deg);
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+}
