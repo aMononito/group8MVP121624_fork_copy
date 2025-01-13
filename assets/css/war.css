@@ -23,6 +23,7 @@ header {
 
 nav {
   width: 100%;
+  border-bottom: 2px solid #000;
 }
 
 ul {
