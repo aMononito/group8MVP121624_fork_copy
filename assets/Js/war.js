@@ -1,4 +1,4 @@
-const dealButton = document.querySelector("#dealButton");
+// const dealButton = document.querySelector("#dealButton");
 const newGameBtn = document.getElementById("new-game");
 const modal = document.querySelector(".modal");
 const modalInput = document.getElementById("your-name");

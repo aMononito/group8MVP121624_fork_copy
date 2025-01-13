@@ -78,6 +78,8 @@
       <h1>WAR</h1>
       <section id="winner">
         <h2 id="winner-display"></h2>
+        
+        <h3 id="winLossMsg" ></h3>
       </section>
 
 
@@ -87,8 +89,9 @@
             <div id="player-card" class="col-sm-12 col-md-12 col-lg-4">
               <h3>
                 <span id="display-area"></span>
-                Cards:
+                Cards: <span id="userScore"></span>
               </h3>
+              <div id="userCount"></div>
               <p id="player-cards-num"></p>
               <img
                 src="./Media/game-card-back.png"
@@ -115,7 +118,7 @@
             </div>
 
             <div id="computer-card" class="col-sm-12 col-md-12 col-lg-4">
-              <h3>Computer Cards:</h3>
+              <h3>Computer Cards: <span id="cpuScore"></span></h3> <div id="cpuCount"></div>
               <p id="comp-cards-num"></p>
               <img
                 src="./Media/game-card-back.png"
