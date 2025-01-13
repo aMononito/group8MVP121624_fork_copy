@@ -62,9 +62,6 @@ li {
 /*  BODY  */
 /**************************/
 
-main {
-}
-
 h1 {
   display: block;
   text-align: center;
@@ -113,8 +110,58 @@ h3 {
   border-color: rgb(243, 99, 99);
 }
 
+/* .btn-primary {
+  --bs-btn-hover-bg: rgb(243, 99, 99);
+  --bs-btn-border-color: rgb(243, 99, 99);
+  --bs-btn-hover-border-color: rgb(243, 99, 99);
+  --bs-btn-active-bg: rgb(243, 99, 99);
+  --bs-btn-active-border-color: rgb(243, 99, 99);
+} */
+
 .btn-primary:hover,
-.btn-primary:active {
+.btn-primary:active
+/* .btn-primary:focus,
+.btn-primary:visited*/ {
   background-color: rgb(182, 76, 76);
   border-color: rgb(182, 76, 76);
 }
+
+/**************************/
+/*  MEDIA QUERIES  */
+/**************************/
+
+/* @media (min-width: 576px) {
+  .col-sm-12 {
+    margin: 20px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .col-sm-12 {
+    margin: 20px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .col-sm-12 {
+    margin: 20px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  ...;
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  ...;
+} */
