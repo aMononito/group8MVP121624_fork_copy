@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Bebas Neue", serif;
+  background-color: rgb(107, 104, 104);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+nav {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 50px;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: rgb(243, 99, 99);
+}
+
+/**************************/
+/*  BODY  */
+/**************************/
+
+h1 {
+  display: block;
+  text-align: center;
+  font-size: 100px;
+  margin: 50px auto;
+}
+
+#your-name {
+  font-size: 40px;
+}
+
+.game {
+}
+
+.row > * {
+  padding: 20px;
+}
+
+/* .col {
+  margin: 20px;
+} */
+
+#game-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btn {
+  display: block;
+  font-size: 2rem;
+  padding: 1rem 2.5rem;
+  border-radius: 15px;
+
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: rgb(243, 99, 99);
+  border-color: rgb(243, 99, 99);
+}
+
+/* .btn-primary {
+  --bs-btn-hover-bg: rgb(243, 99, 99);
+  --bs-btn-border-color: rgb(243, 99, 99);
+  --bs-btn-hover-border-color: rgb(243, 99, 99);
+  --bs-btn-active-bg: rgb(243, 99, 99);
+  --bs-btn-active-border-color: rgb(243, 99, 99);
+} */
+
+.btn-primary:hover,
+.btn-primary:active,
+/* .btn-primary:focus,
+.btn-primary:visited*/ {
+  background-color: rgb(182, 76, 76);
+  border-color: rgb(182, 76, 76);
+}
+
+/**************************/
+/*  MEDIA QUERIES  */
+/**************************/
+
+/* @media (min-width: 576px) {
+  .col-sm-12 {
+    margin: 20px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .col-sm-12 {
+    margin: 20px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .col-sm-12 {
+    margin: 20px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  ...;
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  ...;
+} */

@@ -12,4 +12,3 @@ const newCard = function () {
 
 dealBtn.addEventListener("click", newCard);
 
-append to change player name 
