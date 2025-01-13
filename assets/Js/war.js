@@ -13,6 +13,7 @@ formEl.addEventListener("submit", (event) => {
   const inputValue = modalInput.value;
   console.log("inputValue", inputValue);
   displayArea.textContent = inputValue;
+  localStorage.setItem("username", JSON.stringify(inputValue));
 });
 
 if (userScore.value === 0) {
@@ -20,4 +21,3 @@ if (userScore.value === 0) {
 } else if (cpuScore.value === 0) {
   winner.textContent = `${inputValue} Wins!`;
 }
-git;
