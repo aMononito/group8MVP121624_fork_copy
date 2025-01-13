@@ -116,6 +116,13 @@ if (newGame) {
     });
 }
 
+//create a new randomPairs array and store in local storage when you click the new game button
+if (newGame) {
+    newGame.addEventListener('click', () => {
+        localStorage.setItem('randomPairs', JSON.stringify(randomPairs));
+    });
+}
+
 //when new game is pressed store cards array in local storage
 if (newGame) {
     newGame.addEventListener('click', () => {
@@ -142,5 +149,28 @@ dealButton.addEventListener('click', () => {
     cpuCount.textContent = card2.value;
 });
 
+//when last element in array is reached, rerun the generateRandom function and store in local storage
+//when deal button is clicked
+dealButton.addEventListener('click', () => {
+    if (n === 26) {
+        const newRandomPairs = generateRandom();
+        localStorage.setItem('randomPairs', JSON.stringify(newRandomPairs));
+        n = 0;
+    }
+});
 
-//when deal button is clicked, display the user card value and image in the html document
+
+//when the play button is clicked, the value of the cards is compared and the winner is displayed
+//in the html document
+dealButton.addEventListener('click', () => {
+    const userValue = parseInt(userCount.textContent);
+    const cpuValue = parseInt(cpuCount.textContent);
+
+    if (userValue > cpuValue) {
+        winLossMsg.textContent = 'You Win!';
+    } else if (cpuValue > userValue) {
+        winLossMsg.textContent = 'You Lose!';
+    } else {
+        winLossMsg.textContent = 'Tie!';
+    }
+});
