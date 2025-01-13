@@ -70,11 +70,29 @@ h1 {
   text-align: center;
   font-size: 100px;
   margin: 50px auto;
+  font-family: "Stencil Std", fantasy;
+  text-shadow: 5px 5px rgb(247, 5, 5)
 }
 
-.game {
+h3 {
+  font-family: Stencil Std, fantasy;
+}
+.knight-one {
+  height: 280px;
+  width: 325px;
+  margin: 20px;
+  border-radius: 10px;
+ 
+
 }
 
+.knight-two {
+  height: 280px;
+  width: 325px;
+  margin: 20px;
+  border-radius: 10px;
+
+}
 #game-btns {
   display: flex;
   flex-direction: column;
