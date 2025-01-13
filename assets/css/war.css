@@ -70,7 +70,7 @@ h1 {
   margin: 50px auto;
 }
 
-#your-name {
+.modal-body {
   font-size: 40px;
 }
 

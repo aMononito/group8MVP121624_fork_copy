@@ -14,9 +14,7 @@ formEl.addEventListener("submit", (event) => {
   displayArea.textContent = inputValue;
 });
 
-
-if ()
-
+// if ()
 
 // const newCard = function () {
 //   Math.floor(Math.random() * 26) + 1;
