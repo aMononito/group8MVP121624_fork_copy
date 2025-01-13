@@ -1,13 +1,15 @@
 //pulling in elements as variables from html document
 const dealButton = document.querySelector('#dealButton');
 const newGame = document.querySelector('#new-game');
-const cpuDeck = document.querySelector('#computer-deck');
+const cpuDeck = document.querySelector('#cpuDeck');
 const cpuPlay = document.querySelector('#cpuPlay');
 const cpuCount = document.querySelector('#cpuCount');
 const userDeck = document.querySelector('#userDeck');
 const userPlay = document.querySelector('#userPlay');
 const userCount = document.querySelector('#userCount');
 const winLossMsg = document.querySelector('#winLossMsg');
+const userScore = document.querySelector('#userScore');
+const cpuScore = document.querySelector('#cpuScore');
 
 //creating an array to describe each individual card in the deck
 const H2 = {value: 2, img: "/MainProject/ImgCards/2H.png"};
@@ -174,3 +176,11 @@ dealButton.addEventListener('click', () => {
         winLossMsg.textContent = 'Tie!';
     }
 });
+
+//Starting the game with the new game button will reset the player and cpu count to 26
+if (newGame) {
+    newGame.addEventListener('click', () => {
+        userScore.textContent = 26;
+        cpuScore.textContent = 26;
+    });
+}
