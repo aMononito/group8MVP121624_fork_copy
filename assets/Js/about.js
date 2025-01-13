@@ -1,5 +1,3 @@
-console.log("hello");
-
 const container = document.querySelector('.container');
 
 container.addEventListener('click', function (event) {
@@ -64,12 +62,16 @@ const game = () => {
         player = player.toLowerCase();
         computer = computer.toLowerCase();
 
+        console.log(`Player chose: ${player}`);
+        console.log(`Computer chose: ${computer}`);
+
         if (player === "rock" && computer === "scissors" ||
             player === "scissors" && computer === "paper" ||
             player === "paper" && computer === "rock" ){
                 result.textContent = 'Player Won';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
+                
         
         }else if (player === computer){
             result.textContent = 'Tie'
@@ -98,26 +100,27 @@ const game = () => {
 
         if (playerScore > computerScore) {
             result.style.fontSize = '2rem';
-            result.innerText = 'You Won The Game'
+            result.innerText = 'You won this round! 🎉'
             result.style.color = '#308D46';
         }
         else if (playerScore < computerScore) {
             result.style.fontSize = '2rem';
-            result.innerText = 'You Lost The Game';
+            result.innerText = 'Computer won this round! 😞';
             result.style.color = 'red';
         }
         else {
             result.style.fontSize = '2rem';
-            result.innerText = 'Tie';
+            result.innerText = 'It\'s a tie! 🫣';
             result.style.color = 'grey'
         }
         reloadBtn.innerText = 'Restart';
         reloadBtn.style.display = 'flex'
         reloadBtn.addEventListener('click', () => {
+            console.log('Restarting the game');
             window.location.reload();
         })
     }
     playGame();
-
+    console.log('Game started');
 }
 game();
