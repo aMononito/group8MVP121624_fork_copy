@@ -7,10 +7,37 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Group8</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="card.css" />
 </head>
 <body>
-    <div></div>
+    <h1>War Card Game</h1>
+    <h2>Instructions</h2>
+      <p>Click the deal button to start the game. The computer and player will each be dealt a card.
+        The player with the highest card wins the round. The game will continue until the deck is empty. 
+        The player with the most cards at the end of the game wins.</p>
+        <div id="game" class="game">
+          <button id= 'dealButton' class="dealButton">Deal</button>
+          <button id="new-game" class="new-game">New Game</button>
+        </div>
+        <div id="card-container" class="card-container">
+          <div id="userCardContainer" class="userCardContainer">
+            <div id="userScore" class="userScore"></div>
+            <div id="userDeck" class="userDeck">Player Card Here</div>
+            <div id="userCount" class="userCount"></div>
+            <div id="userPlay" class="userPlay"></div>
+          </div>
+          <div id="computerCardContainer" class="computerCardContainer">
+            <div id="cpuScore" class="cpuScore"></div>
+            <div id="cpuDeck" class="cpuDeck">
+              Player Card Here
+            </div>
+            <div id="cpuPlay" class="cpuPlay"></div>
+            <div id="cpuCount" class="cpuCount"></div>
+            <div id="winLossMsg" class="winLossMsg"></div>
+          </div>
+        </div>
     <script src="script.js"></script>
+    <script src="gameLogic.js"></script>
 </body>
 
 </html>

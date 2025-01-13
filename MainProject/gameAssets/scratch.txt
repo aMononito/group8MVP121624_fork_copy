@@ -1,0 +1,39 @@
+const cardObjects = []
+for (let suit = 4; suit > 0; suit--) {
+    for (let rank = 13; rank > 0; rank--) {
+        cardObjects.push({
+            suit: suit,
+            rank: rank
+        })
+    }
+}
+
+function Card(suit, rank) {
+    this.suit = suit;
+    this.rank = rank;
+}
+
+function Deck() {
+    this.cards = [];
+    for (let suit = 4; suit > 0; suit--) {
+        for (let rank = 13; rank > 0; rank--) {
+            this.cards.push(new Card(suit, rank));
+        }
+    }
+
+}
+
+var deck= new Deck()
+
+
+//shuffle function here
+function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+    let j, x;
+    j = Math.floor(Math.random() * (i + 1));
+    x = a[i];
+    a[i] = a[j];
+    a[j] = x;
+    a[j]=x;
+}
+}
