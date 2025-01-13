@@ -4,8 +4,9 @@ const modal = document.querySelector(".modal");
 const modalInput = document.getElementById("your-name");
 const submitBtn = document.getElementById("submit-btn");
 const displayArea = document.getElementById("display-area");
+const formEl = document.getElementById("form");
 
-submitBtn.addEventListener("submit", (event) => {
+formEl.addEventListener("submit", (event) => {
   event.preventDefault();
   event.stopPropagation();
   const inputValue = modalInput.value;
@@ -13,15 +14,12 @@ submitBtn.addEventListener("submit", (event) => {
   displayArea.textContent = inputValue;
 });
 
-const newCard = function () {
-  Math.floor(Math.random() * 26) + 1;
-};
 
-dealBtn.addEventListener("click", newCard);
+if ()
 
-console.log("hello");
 
-$(document).on("click", "#btn-submit", function (event) {
-  event.preventDefault();
-  console.log("hello");
-});
+// const newCard = function () {
+//   Math.floor(Math.random() * 26) + 1;
+// };
+
+// dealBtn.addEventListener("click", newCard);
