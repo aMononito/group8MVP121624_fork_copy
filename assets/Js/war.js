@@ -1,14 +1,26 @@
 const dealBtn = document.getElementById("deal");
 const newGameBtn = document.getElementById("new-game");
 const modal = document.querySelector(".modal");
+const modalInput = document.getElementById("your-name");
+const submitBtn = document.getElementById("submit-btn");
+const displayArea = document.getElementById("display-area");
+const formEl = document.getElementById("form");
 
-newGameBtn.onclick = function () {
-  modal.style.display = "block";
-};
+formEl.addEventListener("submit", (event) => {
+  event.preventDefault();
+  event.stopPropagation();
+  const inputValue = modalInput.value;
+  console.log("inputValue", inputValue);
+  displayArea.textContent = inputValue;
+});
 
-const newCard = function () {
-  Math.floor(Math.random() * 26) + 1;
-};
+// if ()
 
-dealBtn.addEventListener("click", newCard);
+// const newCard = function () {
+//   Math.floor(Math.random() * 26) + 1;
+// };
 
+// <<<<<<< Lee-Intro-Page
+// =======
+// // dealBtn.addEventListener("click", newCard);
+// >>>>>>> main
