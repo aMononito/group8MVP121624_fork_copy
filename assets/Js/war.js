@@ -20,4 +20,7 @@ formEl.addEventListener("submit", (event) => {
 //   Math.floor(Math.random() * 26) + 1;
 // };
 
-// dealBtn.addEventListener("click", newCard);
+// <<<<<<< Lee-Intro-Page
+// =======
+// // dealBtn.addEventListener("click", newCard);
+// >>>>>>> main
