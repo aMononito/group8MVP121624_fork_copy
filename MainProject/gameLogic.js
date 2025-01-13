@@ -132,6 +132,14 @@ if (newGame) {
     });
 }
 
+//Starting the game with the new game button will reset the player and cpu count to 26
+if (newGame) {
+    newGame.addEventListener('click', () => {
+        userScore.textContent = 26;
+        cpuScore.textContent = 26;
+    });
+}
+
 //When deal button is clicked, use the array created from the generateRandom function 
 //in order from 0 to 25 to select 2 cards from the cards array and display the card image and value
 //in the html document
@@ -177,10 +185,18 @@ dealButton.addEventListener('click', () => {
     }
 });
 
-//Starting the game with the new game button will reset the player and cpu count to 26
-if (newGame) {
-    newGame.addEventListener('click', () => {
-        userScore.textContent = 26;
-        cpuScore.textContent = 26;
-    });
-}
+
+//when the deal button is clicked, the player and cpu score 
+// will be updated based on the winner of the round
+dealButton.addEventListener('click', () => {
+    const userValue = parseInt(userCount.textContent);
+    const cpuValue = parseInt(cpuCount.textContent);
+
+    if (userValue > cpuValue) {
+        userScore.textContent = parseInt(userScore.textContent) + 1;
+        cpuScore.textContent = parseInt(cpuScore.textContent) - 1;
+    } else if (cpuValue > userValue) {
+        userScore.textContent = parseInt(userScore.textContent) - 1;
+        cpuScore.textContent = parseInt(cpuScore.textContent) + 1;
+    }
+});
