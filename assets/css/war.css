@@ -95,8 +95,18 @@ h1 {
   border-color: rgb(243, 99, 99);
 }
 
+/* .btn-primary {
+  --bs-btn-hover-bg: rgb(243, 99, 99);
+  --bs-btn-border-color: rgb(243, 99, 99);
+  --bs-btn-hover-border-color: rgb(243, 99, 99);
+  --bs-btn-active-bg: rgb(243, 99, 99);
+  --bs-btn-active-border-color: rgb(243, 99, 99);
+} */
+
 .btn-primary:hover,
-.btn-primary:active {
+.btn-primary:active,
+/* .btn-primary:focus,
+.btn-primary:visited*/ {
   background-color: rgb(182, 76, 76);
   border-color: rgb(182, 76, 76);
 }
