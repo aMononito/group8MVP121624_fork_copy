@@ -124,3 +124,30 @@ const game = () => {
     console.log('Game started');
 }
 game();
+
+// ...........................................................................
+
+// function generateRandom() {
+//     const originalArray = Array.from({ length: 52 }, (_, index) => index); 
+//     const usedIn = [];
+//     const result = [];
+
+//     while (usedIn.length < 52) {
+        
+//         const available = originalArray.filter(index => !usedIn.includes(index));
+//         const firstIndex = available[Math.floor(Math.random() * available.length)];
+//         usedIn.push(firstIndex);
+
+       
+//         const updatedAvailable = available.filter(index => index !== firstIndex);
+//         const secondIndex = updatedAvailable[Math.floor(Math.random() * updatedAvailable.length)];
+//         usedIn.push(secondIndex);
+
+//         result.push([firstIndex, secondIndex]);
+//     }
+
+//     return result;
+// }
+
+// const randomPairs = generateRandom();
+// console.log(randomPairs);
