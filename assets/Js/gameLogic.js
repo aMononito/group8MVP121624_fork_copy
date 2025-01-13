@@ -14,70 +14,70 @@ const cpuCard = document.querySelector('#cpuCard');
 const userCard = document.querySelector('#userCard');
 
 //creating an array to describe each individual card in the deck
-const H2 = {value: 2, img: "/MainProject/ImgCards/2H.png"};
-const D2 = {value: 2, img: "/MainProject/ImgCards/2D.png"};
-const S2 = {value: 2, img: "/MainProject/ImgCards/2S.png"};
-const C2 = {value: 2, img: "/MainProject/ImgCards/2C.png"};
+const H2 = {value: 2, img: "/assets/ImgCards/2_of_hearts.png"};
+const D2 = {value: 2, img: "/assets/ImgCards/2_of_diamonds.png"};
+const S2 = {value: 2, img: "/assets/ImgCards/2_of_spades.png"};
+const C2 = {value: 2, img: "/assets/ImgCards/2_of_clubs.png"};
 
-const H3 = {value: 3, img: "/MainProject/ImgCards/3H.png"};
-const D3 = {value: 3, img: "/MainProject/ImgCards/3D.png"};
-const S3 = {value: 3, img: "/MainProject/ImgCards/3S.png"};
-const C3 = {value: 3, img: "/MainProject/ImgCards/3C.png"};
+const H3 = {value: 3, img: "/assets/ImgCards/3_of_hearts.png"};
+const D3 = {value: 3, img: "/assets/ImgCards/3_of_diamonds.png"};
+const S3 = {value: 3, img: "/assets/ImgCards/3_of_spades.png"};
+const C3 = {value: 3, img: "/assets/ImgCards/3_of_clubs.png"};
 
-const H4 = {value: 4, img: "/MainProject/ImgCards/4H.png"};
-const D4 = {value: 4, img: "/MainProject/ImgCards/4D.png"};
-const S4 = {value: 4, img: "/MainProject/ImgCards/4S.png"};
-const C4 = {value: 4, img: "/MainProject/ImgCards/4C.png"};
+const H4 = {value: 4, img: "/assets/ImgCards/4_of_hearts.png"};
+const D4 = {value: 4, img: "/assets/ImgCards/4_of_diamonds.png"};
+const S4 = {value: 4, img: "/assets/ImgCards/4_of_spades.png"};
+const C4 = {value: 4, img: "/assets/ImgCards/4_of_clubs.png"};
 
-const H5 = {value: 5, img: "/MainProject/ImgCards/5H.png"};
-const D5 = {value: 5, img: "/MainProject/ImgCards/5D.png"};
-const S5 = {value: 5, img: "/MainProject/ImgCards/5S.png"};
-const C5 = {value: 5, img: "/MainProject/ImgCards/5C.png"};
+const H5 = {value: 5, img: "/assets/ImgCards/5_of_hearts.png"};
+const D5 = {value: 5, img: "/assets/ImgCards/5_of_diamonds.png"};
+const S5 = {value: 5, img: "/assets/ImgCards/5_of_spades.png"};
+const C5 = {value: 5, img: "/assets/ImgCards/5_of_clubs.png"};
 
-const H6 = {value: 6, img: "/MainProject/ImgCards/6H.png"};
-const D6 = {value: 6, img: "/MainProject/ImgCards/6D.png"};
-const S6 = {value: 6, img: "/MainProject/ImgCards/6S.png"};
-const C6 = {value: 6, img: "/MainProject/ImgCards/6C.png"};
+const H6 = {value: 6, img: "/assets/ImgCards/6_of_hearts.png"};
+const D6 = {value: 6, img: "/assets/ImgCards/6_of_diamonds.png"};
+const S6 = {value: 6, img: "/assets/ImgCards/6_of_spades.png"};
+const C6 = {value: 6, img: "/assets/ImgCards/6_of_clubs.png"};
 
-const H7 = {value: 7, img: "/MainProject/ImgCards/7H.png"};
-const D7 = {value: 7, img: "/MainProject/ImgCards/7D.png"};
-const S7 = {value: 7, img: "/MainProject/ImgCards/7S.png"};
-const C7 = {value: 7, img: "/MainProject/ImgCards/7C.png"};
+const H7 = {value: 7, img: "/assets/ImgCards/7_of_hearts.png"};
+const D7 = {value: 7, img: "/assets/ImgCards/7_of_diamonds.png"};
+const S7 = {value: 7, img: "/assets/ImgCards/7_of_spades.png"};
+const C7 = {value: 7, img: "/assets/ImgCards/7_of_clubs.png"};
 
-const H8 = {value: 8, img: "/MainProject/ImgCards/8H.png"};
-const D8 = {value: 8, img: "/MainProject/ImgCards/8D.png"};
-const S8 = {value: 8, img: "/MainProject/ImgCards/8S.png"};
-const C8 = {value: 8, img: "/MainProject/ImgCards/8C.png"};
+const H8 = {value: 8, img: "/assets/ImgCards/8_of_hearts.png"};
+const D8 = {value: 8, img: "/assets/ImgCards/8_of_diamonds.png"};
+const S8 = {value: 8, img: "/assets/ImgCards/8_of_spades.png"};
+const C8 = {value: 8, img: "/assets/ImgCards/8_of_clubs.png"};
 
-const H9 = {value: 9, img: "/MainProject/ImgCards/9H.png"};
-const D9 = {value: 9, img: "/MainProject/ImgCards/9D.png"};
-const S9 = {value: 9, img: "/MainProject/ImgCards/9S.png"};
-const C9 = {value: 9, img: "/MainProject/ImgCards/9C.png"};
+const H9 = {value: 9, img: "/assets/ImgCards/9_of_hearts.png"};
+const D9 = {value: 9, img: "/assets/ImgCards/9_of_diamonds.png"};
+const S9 = {value: 9, img: "/assets/ImgCards/9_of_spades.png"};
+const C9 = {value: 9, img: "/assets/ImgCards/9_of_clubs.png"};
 
-const H10 = {value: 10, img: "/MainProject/ImgCards/10H.png"};
-const D10 = {value: 10, img: "/MainProject/ImgCards/10D.png"};
-const S10 = {value: 10, img: "/MainProject/ImgCards/10S.png"};
-const C10 = {value: 10, img: "/MainProject/ImgCards/10C.png"};
+const H10 = {value: 10, img: "/assets/ImgCards/10_of_hearts.png"};
+const D10 = {value: 10, img: "/assets/ImgCards/10_of_diamonds.png"};
+const S10 = {value: 10, img: "/assets/ImgCards/10_of_spades.png"};
+const C10 = {value: 10, img: "/assets/ImgCards/10_of_clubs.png"};
 
-const JH = {value: 11, img: "/MainProject/ImgCards/JH.png"};
-const JD = {value: 11, img: "/MainProject/ImgCards/JD.png"};
-const JS = {value: 11, img: "/MainProject/ImgCards/JS.png"};
-const JC = {value: 11, img: "/MainProject/ImgCards/JC.png"};
+const JH = {value: 11, img: "/assets/ImgCards/jack_of_hearts.png"};
+const JD = {value: 11, img: "/assets/ImgCards/jack_of_diamonds.png"};
+const JS = {value: 11, img: "/assets/ImgCards/jack_of_spades.png"};
+const JC = {value: 11, img: "/assets/ImgCards/jack_of_clubs.png"};
 
-const QH = {value: 12, img: "/MainProject/ImgCards/QH.png"};
-const QD = {value: 12, img: "/MainProject/ImgCards/QD.png"};
-const QS = {value: 12, img: "/MainProject/ImgCards/QS.png"};
-const QC = {value: 12, img: "/MainProject/ImgCards/QC.png"};
+const QH = {value: 12, img: "/assets/ImgCards/queen_of_hearts.png"};
+const QD = {value: 12, img: "/assets/ImgCards/queen_of_diamonds.png"};
+const QS = {value: 12, img: "/assets/ImgCards/queen_of_spades.png"};
+const QC = {value: 12, img: "/assets/ImgCards/queen_of_clubs.png"};
 
-const KH = {value: 13, img: "/MainProject/ImgCards/KH.png"};
-const KD = {value: 13, img: "/MainProject/ImgCards/KD.png"};
-const KS = {value: 13, img: "/MainProject/ImgCards/KS.png"};
-const KC = {value: 13, img: "/MainProject/ImgCards/KC.png"};
+const KH = {value: 13, img: "/assets/ImgCards/kings_of_hearts.png"};
+const KD = {value: 13, img: "/assets/ImgCards/kings_of_diamonds.png"};
+const KS = {value: 13, img: "/assets/ImgCards/kings_of_spades.png"};
+const KC = {value: 13, img: "/assets/ImgCards/kings_of_clubs.png"};
 
-const AH = {value: 14, img: "/MainProject/ImgCards/AH.png"};
-const AD = {value: 14, img: "/MainProject/ImgCards/AD.png"};
-const AS = {value: 14, img: "/MainProject/ImgCards/AS.png"};
-const AC = {value: 14, img: "/MainProject/ImgCards/AC.png"};
+const AH = {value: 14, img: "/assets/ImgCards/ace_of_hearts.png"};
+const AD = {value: 14, img: "/assets/ImgCards/ace_of_diamonds.png"};
+const AS = {value: 14, img: "/assets/ImgCards/ace_of_spades.png"};
+const AC = {value: 14, img: "/assets/ImgCards/ace_of_clubs.png"};
 
 const cards = [
     H2, D2, S2, C2, H3, D3, S3, C3, H4, D4, S4, C4, H5, 
@@ -154,10 +154,10 @@ dealButton.addEventListener('click', () => {
     const card1 = cards[randomPair[0]];
     const card2 = cards[randomPair[1]];
 
-    userDeck.src = card1.img;
+    userCard.src = card1.img;
     userCount.textContent = card1.value;
 
-    cpuDeck.src = card2.img;
+    cpuCard.src = card2.img;
     cpuCount.textContent = card2.value;
 });
 
