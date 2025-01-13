@@ -1,31 +1,72 @@
+* {
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", serif;
+  background-color: rgb(107, 104, 104);
+}
+
+
 
 :root{
     --heliotrope: #6d0f41;
     --box1-color: hsl(19, 68%, 44%);
     --light-accent: #e1a071;
     --dark-accent: #570e0e;
-
-    --blue-light:blue;
-    --blue-dark:rgba(5, 5, 90, 0.709);
+    --blue-light:#5151e847;
+    --blue-dark:rgb(194 194 197 / 71%);
     --blue-light1:rgb(182, 182, 255);
+
+
+}
+.github-button{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(163%, 13%);
+  z-index: 1;
+  border-radius: 50%;
+}
+.github-logo{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(-51%, -11%);
+  z-index: 1;
+  border-radius: 50%;
 }
 header{
-    height: 60px;
-    background: linear-gradient(
-        var(--blue-light1),
-        var(--blue-dark)
-      );
-    color: rgb(92, 2, 2);
+    height: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 nav li {
+  font-size: 50px;
     display: inline;
     padding: 0px 20px;
     text-decoration: none;
 }
+ul {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
 nav a:hover {
-    box-shadow: -12px -8px 11px 6px var(--heliotrope), 0 0 15px var(--heliotrope);
+  color: rgb(243, 99, 99);
+}
+.main-nav-link {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
 }
 
 h1 {
@@ -33,13 +74,11 @@ h1 {
 }
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin: 20px;
+    display: block;
+    text-align: center;
     padding: 3%;
     flex-wrap: wrap;
   }
@@ -47,7 +86,7 @@ main {
   .row {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 34px;
+    
     justify-items: stretch;
   }
   .name-box {
@@ -71,7 +110,6 @@ main {
     padding: 20px;
     text-align: center;
     border: 14px solid #390707;
-    /* background-color: #764b4b; */
     border-radius: 36px;
     display: flex;
     align-items: center;
@@ -87,8 +125,8 @@ main {
   }
 
 .info-content {
-    display: none; /* Initially hidden */
-    margin-top: 20px; /* Add spacing for the revealed content */
+    display: none;
+    margin-top: 20px;
     color: white;
 }
   
@@ -101,20 +139,41 @@ main {
   }
 
   aside {
-    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--outer-space);
     padding: 20px;
-    flex-wrap: wrap;
     color: var(--heliotrope);
 }
 aside img {
-    width: 50%;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: var(--border-radius);
-    padding: 10px;
-    flex: 0 0 300px;
-    transform: rotate(8deg);
-    box-shadow: 10px 10px 5px #aaaaaa;
-    margin: 20px;
+  width: 37%
+
+}
+.rps-title {
+  font-size: 3rem;
+  color: #ff6347;
+  animation: bounceIn 1.5s ease infinite, glow 2s ease-in-out infinite alternate;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px rgba(255, 99, 71, 0.8);
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+aside .game {
+  margin: -8px;
+  padding: 70px;
+  flex: 1; 
+  color: #ff6347;
+  text-shadow: 0 0 15px rgba(255, 99, 71, 0.8);
+}
+
+.rock:hover,
+.paper:hover,
+.scissor:hover {
+  background-color: rgb(182, 76, 76);
 }
