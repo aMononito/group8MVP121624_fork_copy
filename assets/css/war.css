@@ -81,8 +81,16 @@ h1 {
 .game {
 }
 
+#userCard{
+  width: 257px;
+}
+
+#cpuCard{
+  width: 257px;
+}
+
 #userCount {
-  display: none;
+  display:none;
 }
 
 #cpuCount {

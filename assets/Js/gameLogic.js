@@ -69,16 +69,15 @@ const QD = {value: 12, img: "/assets/ImgCards/queen_of_diamonds.png"};
 const QS = {value: 12, img: "/assets/ImgCards/queen_of_spades.png"};
 const QC = {value: 12, img: "/assets/ImgCards/queen_of_clubs.png"};
 
-const KH = {value: 13, img: "/assets/ImgCards/kings_of_hearts.png"};
-const KD = {value: 13, img: "/assets/ImgCards/kings_of_diamonds.png"};
-const KS = {value: 13, img: "/assets/ImgCards/kings_of_spades.png"};
-const KC = {value: 13, img: "/assets/ImgCards/kings_of_clubs.png"};
+const KH = {value: 13, img: "/assets/ImgCards/king_of_hearts.png"};
+const KD = {value: 13, img: "/assets/ImgCards/king_of_diamonds.png"};
+const KS = {value: 13, img: "/assets/ImgCards/king_of_spades.png"};
+const KC = {value: 13, img: "/assets/ImgCards/king_of_clubs.png"};
 
 const AH = {value: 14, img: "/assets/ImgCards/ace_of_hearts.png"};
 const AD = {value: 14, img: "/assets/ImgCards/ace_of_diamonds.png"};
 const AS = {value: 14, img: "/assets/ImgCards/ace_of_spades.png"};
 const AC = {value: 14, img: "/assets/ImgCards/ace_of_clubs.png"};
-
 
 const cards = [
     H2, D2, S2, C2, H3, D3, S3, C3, H4, D4, S4, C4, H5, 

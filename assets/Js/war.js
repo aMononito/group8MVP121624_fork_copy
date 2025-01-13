@@ -12,12 +12,13 @@ formEl.addEventListener("submit", (event) => {
   event.stopPropagation();
   const inputValue = modalInput.value;
   console.log("inputValue", inputValue);
-  displayArea.textContent = inputValue;
+  displayArea.textContent = inputValue +'s';
   localStorage.setItem("username", JSON.stringify(inputValue));
 });
 
-if (userScore.value === 0) {
+// function determineWinner(userScore, cpuScore) {
+if (userScore.value == 0) {
   winner.textContent = "Computer Wins!";
-} else if (cpuScore.value === 0) {
+} else if (cpuScore.value == 0) {
   winner.textContent = `${inputValue} Wins!`;
 }
