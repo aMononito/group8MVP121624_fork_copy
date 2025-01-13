@@ -10,6 +10,8 @@ const userCount = document.querySelector('#userCount');
 const winLossMsg = document.querySelector('#winLossMsg');
 const userScore = document.querySelector('#userScore');
 const cpuScore = document.querySelector('#cpuScore');
+const cpuCard = document.querySelector('#cpuCard');
+const userCard = document.querySelector('#userCard');
 
 //creating an array to describe each individual card in the deck
 const H2 = {value: 2, img: "/MainProject/ImgCards/2H.png"};
@@ -48,7 +50,7 @@ const S8 = {value: 8, img: "/MainProject/ImgCards/8S.png"};
 const C8 = {value: 8, img: "/MainProject/ImgCards/8C.png"};
 
 const H9 = {value: 9, img: "/MainProject/ImgCards/9H.png"};
-const D9 = {value: 9, img: "ImgCards/9D.png"};
+const D9 = {value: 9, img: "/MainProject/ImgCards/9D.png"};
 const S9 = {value: 9, img: "/MainProject/ImgCards/9S.png"};
 const C9 = {value: 9, img: "/MainProject/ImgCards/9C.png"};
 
