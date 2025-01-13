@@ -70,11 +70,23 @@ h1 {
   margin: 50px auto;
 }
 
+#winLossMsg {
+  text-align: center;
+}
+
 .modal-body {
   font-size: 40px;
 }
 
 .game {
+}
+
+#userCount {
+  display: none;
+}
+
+#cpuCount {
+  display: none;
 }
 
 .row > * {
