@@ -67,23 +67,29 @@ h1 {
   text-align: center;
   font-size: 100px;
   margin: 50px auto;
+  font-family: "Stencil Std", fantasy;
+  text-shadow: 5px 5px rgb(247, 5, 5)
 }
 
-#your-name {
-  font-size: 40px;
+h3 {
+  font-family: Stencil Std, fantasy;
 }
-
-.game {
-}
-
-.row > * {
-  padding: 20px;
-}
-
-/* .col {
+.knight-one {
+  height: 280px;
+  width: 325px;
   margin: 20px;
-} */
+  border-radius: 10px;
+ 
 
+}
+
+.knight-two {
+  height: 280px;
+  width: 325px;
+  margin: 20px;
+  border-radius: 10px;
+
+}
 #game-btns {
   display: flex;
   flex-direction: column;
@@ -113,7 +119,7 @@ h1 {
 } */
 
 .btn-primary:hover,
-.btn-primary:active,
+.btn-primary:active
 /* .btn-primary:focus,
 .btn-primary:visited*/ {
   background-color: rgb(182, 76, 76);
