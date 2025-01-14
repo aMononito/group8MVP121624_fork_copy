@@ -74,7 +74,6 @@ const KD = {value: 13, img: "/assets/ImgCards/king_of_diamonds.png"};
 const KS = {value: 13, img: "/assets/ImgCards/king_of_spades.png"};
 const KC = {value: 13, img: "/assets/ImgCards/king_of_clubs.png"};
 
-
 const AH = {value: 14, img: "/assets/ImgCards/ace_of_hearts.png"};
 const AD = {value: 14, img: "/assets/ImgCards/ace_of_diamonds.png"};
 const AS = {value: 14, img: "/assets/ImgCards/ace_of_spades.png"};
@@ -203,3 +202,43 @@ dealButton.addEventListener('click', () => {
         cpuScore.textContent = parseInt(cpuScore.textContent) + 1;
     }
 });
+
+//save the userScore and cpuScore in local storage when the deal button is clicked
+dealButton.addEventListener('click', () => {
+    localStorage.setItem('userScore', userScore.textContent);
+    localStorage.setItem('cpuScore', cpuScore.textContent);
+});
+
+//when the deal button is clicked, if the user score reaches 0, the cpu wins
+//if the cpu score reaches 0, the user wins
+dealButton.addEventListener('click', () => {
+    if (userScore.textContent === '0') {
+        winLossMsg.textContent = 'Computer Wins!';
+    } else if (cpuScore.textContent === '0') {
+        winLossMsg.textContent = 'You Win!';
+    }
+});
+
+//the winner of the game is displayed in the html document
+dealButton.addEventListener('click', () => {
+    if (userScore.textContent === '0' || cpuScore.textContent === '0') {
+        winLossMsg.textContent = 'Game Over!';
+    }
+});
+
+//once any of the scores reach 0, the deal button is disabled
+dealButton.addEventListener('click', () => {
+    if (userScore.textContent === '0' || cpuScore.textContent === '0') {
+        dealButton.style.display = 'none';
+    }
+});
+
+//count the number of times the deal button is clicked, once it reaches 52, the deal button disappears
+// let count = 0;
+// dealButton.addEventListener('click', () => {
+//     count++;
+//     if (count === 10) {
+//         dealButton.style.display = 'none';
+//         winLossMsg.textContent = 'Game Over!' + ;
+//     }
+// });
